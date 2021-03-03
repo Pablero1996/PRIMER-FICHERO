@@ -3,7 +3,7 @@ import subprocess
 # pasamos fichero a stating
 cmd="wget https://download.microsoft.com/download/7/F/3/7F35E2C0-B84F-4B45-A9F2-2A888D51C1D9/sample.log"
 print ("Ejecutando "+cmd)
-output = csubprocess.getstatusoutput(cmd)
+output = subprocess.getstatusoutput(cmd)
 
 cmd="hdfs dfs -mkdir -p /datalake/logs/mobile/application1"
 print ("Ejecutando "+cmd)
